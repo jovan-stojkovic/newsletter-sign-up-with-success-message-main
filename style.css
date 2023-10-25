@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--Charcoal-Grey);
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  width: 900px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 100px auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  position: relative;
+}
+
+.form-container {
+  padding: 50px 30px;
+  /* display: flex;
+    flex-direction: column; */
+}
+
+h1 {
+  color: var(--Dark-Slate-Grey);
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  line-height: 3.5rem;
+}
+
+p {
+  color: var(--Dark-Slate-Grey);
+}
+
+.first-p {
+  margin-bottom: 30px;
+}
+
+.check {
+  display: flex;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--Dark-Slate-Grey);
+}
+
+#error {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--Tomato);
+}
+
+.error-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+  height: 50px;
+  border: var(--Grey) 2px solid;
+  color: var(--Grey);
+  border-radius: 7px;
+  padding: 18px;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+placeholder {
+  padding: 10px;
+}
+
+button {
+  height: 50px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-weight: 700;
+  background-color: var(--Dark-Slate-Grey);
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: var(--Tomato);
+  cursor: pointer;
+  box-shadow: rgba(255, 98, 87, 0.5) 0px 8px 24px;
+}
+
+.conformation {
+  width: 500px;
+  height: 500px;
+  background-color: var(--White);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  display: none;
+}
+
+.icon-success {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.conformation-p {
+    margin-bottom: 20px;
+}
+
+span {
+    font-weight: 700;
+    color: var(--Dark-Slate-Grey);
+}
+
+/* - Font size (paragraph): 16px */
+/* font-family: 'Roboto', sans-serif; */
