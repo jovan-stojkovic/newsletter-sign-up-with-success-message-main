@@ -21,12 +21,10 @@ html {
 
 
 .main-container {
-  width: 900px;
+  max-width: 900px;
   height: 600px;
   background-color: white;
   display: flex;
-  gap: 30px;
-  justify-content: space-between;
   padding: 20px;
   margin: 100px auto;
   border-radius: 20px;
@@ -38,9 +36,7 @@ html {
 }
 
 .form-container {
-  padding: 50px 30px;
-  /* display: flex;
-    flex-direction: column; */
+  padding: 50px 50px;
 }
 
 h1 {
@@ -152,4 +148,63 @@ button:hover {
 span {
     font-weight: 700;
     color: var(--Dark-Slate-Grey);
+}
+
+.main-img-mobile {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .main-container {
+    max-width: 400px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+  
+  .form-container {
+    padding: 25px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  p {
+    line-height: 1.6rem;
+  }
+
+  .valid {
+    max-width: 400px;
+    height: 100vh;
+    padding: 25px;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .icon-success {
+    height: 60px;
+    width: 60px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
+  
+  .conformation-p {
+      margin-bottom: 360px;
+      font-size: 18px;
+  }
+
+  .main-img-desktop {
+    display: none;
+  }
+  
+  .main-img-mobile {
+    display: block;
+    width: 100%;
+  }
 }
