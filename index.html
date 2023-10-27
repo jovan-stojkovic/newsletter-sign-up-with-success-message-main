@@ -16,7 +16,7 @@
     <title>Newsletter sign-up form with success message</title>
   </head>
   <body>
-    <div class="main-container">
+    <div class="main-container" id="home">
       <div class="form-container">
         <h1>Stay updated!</h1>
         <p class="first-p">
@@ -37,7 +37,7 @@
         <form>
           <div class="error-div">
           <label for="email">Email adress</label>
-          <p id="error">Valid email required</p>
+          <p id="error"></p>
         </div>
           <input type="text" placeholder="email@company.com" id="email" />
           <button type="submit" id="submit">Subscribe to monthly newsletter</button>
@@ -47,18 +47,16 @@
         src="assets/illustration-sign-up-desktop.svg"
         class="main-img-desktop"
       />
-      <div class="conformation">
-        <img src="assets/icon-success.svg" class="icon-success" />
-        <h1>Thanks for subscribing!</h1>
-        <p class="conformation-p">
-          A confirmation email has been sent to
-          <span id="user-email">ash@loremcompany.com</span>
-
-          . Please open it and click the button inside to confirm your
-          subscription.
-        </p>
-        <button>Dismiss message</button>
-      </div>
+    </div>
+    <div class="invalid" id="conformation">
+      <img src="assets/icon-success.svg" class="icon-success" />
+      <h1>Thanks for subscribing!</h1>
+      <p class="conformation-p">
+        A confirmation email has been sent to
+        <span id="user-email"></span>. Please open it and click the button inside to confirm your
+        subscription.
+      </p>
+      <button id="dismiss">Dismiss message</button>
     </div>
   </body>
 </html>

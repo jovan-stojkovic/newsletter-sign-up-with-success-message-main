@@ -1,22 +1,25 @@
 const subsButton = document.querySelector("#submit");
 const emailInput = document.querySelector("#email");
 const errorP = document.querySelector("#error");
-const test =
-  '/^(([^<>()[].,;:s@"]+(.[^<>()[].,;:s@"]+)*)|(".+"))@(([^<>()[].,;:s@"]+.)+[^<>()[].,;:s@"]{2,})$/i';
-
-// const validate = (emailInput.value) => {return String(emailInput.value).toLowerCase().match(test)};
-
-const validate = (emailInput.value) => {
-
-  return email.match(test)
-};
-
+const conformation = document.querySelector("#conformation");
+const home = document.querySelector("#home");
+const dismissButton = document.querySelector("#dismiss");
+const userEmail = document.querySelector("#user-email");
+const patern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
 subsButton.addEventListener("click", (e) => {
-  const email = emailInput.value;
-  errorP.innerText = "test";
+  let email = emailInput.value;
   e.preventDefault();
-  console.log(email);
 
-
+  if (email.match(patern)) {
+    conformation.classList.add("valid");
+    home.classList.add("main-valid");
+    userEmail.innerText = email;
+  } else if (!email) {
+    errorP.innerText = "Please enter your email address";
+  } else {
+    errorP.innerText = "Valid email required";
+  }
 });
+
+dismissButton.addEventListener("click", () => window.location.reload());

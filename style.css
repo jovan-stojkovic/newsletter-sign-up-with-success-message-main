@@ -19,6 +19,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+
 .main-container {
   width: 900px;
   height: 600px;
@@ -30,7 +31,10 @@ html {
   margin: 100px auto;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
-  position: relative;
+}
+
+.main-valid {
+  display: none;
 }
 
 .form-container {
@@ -108,6 +112,7 @@ button {
   font-weight: 700;
   background-color: var(--Dark-Slate-Grey);
   margin-top: 5px;
+  width: 100%;
 }
 
 button:hover {
@@ -116,7 +121,11 @@ button:hover {
   box-shadow: rgba(255, 98, 87, 0.5) 0px 8px 24px;
 }
 
-.conformation {
+.invalid {
+  display: none;
+}
+
+.valid {
   width: 500px;
   height: 500px;
   background-color: var(--White);
@@ -126,10 +135,8 @@ button:hover {
   justify-content: space-between;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
-  position: absolute;
-  top: 50px;
-  left: 200px;
-  display: none;
+  display: block;
+  margin: 150px auto;
 }
 
 .icon-success {
@@ -146,6 +153,3 @@ span {
     font-weight: 700;
     color: var(--Dark-Slate-Grey);
 }
-
-/* - Font size (paragraph): 16px */
-/* font-family: 'Roboto', sans-serif; */
